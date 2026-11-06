@@ -35,7 +35,9 @@
   });
 
   // Las cartas de sesiones se giran al tocarlas
-  $$('.card').forEach(c => c.addEventListener('click', () => {
-    const on = c.classList.toggle('flip'); c.setAttribute('aria-pressed', String(on));
-  }));
+  $$('.card').forEach(c => {
+    const flip = () => { const on = c.classList.toggle('flip'); c.setAttribute('aria-pressed', String(on)); };
+    c.addEventListener('click', flip);
+    c.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); flip(); } });
+  });
 })();

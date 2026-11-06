@@ -14,7 +14,7 @@ Es una sola página en HTML, CSS y JavaScript, sin dependencias ni paso de compi
 La reserva de lecturas, la petición de presupuesto para eventos y la lista de la joyería abren WhatsApp con el mensaje ya escrito, dirigido al número de Eva. No hay servidor ni base de datos.
 
 ## Antes del lanzamiento en artedeastro.com
-- [ ] Comprar el dominio `artedeastro.com`, añadir el archivo `CNAME` y configurar los DNS de GitHub Pages.
+- [x] Dominio `artedeastro.com` (Cloudflare Registrar), archivo `CNAME` y DNS de GitHub Pages (4 registros A y `www` en CNAME, sin proxy).
 - [ ] Páginas de aviso legal, privacidad y cookies (con los datos fiscales de Eva).
 - [ ] Precios y duraciones reales de lecturas y formatos de evento (ahora pone «a consultar»).
 - [ ] Títulos, técnica y medidas de las obras.

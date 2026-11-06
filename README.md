@@ -15,8 +15,9 @@ La reserva de lecturas, la petición de presupuesto para eventos y la lista de l
 
 ## Antes del lanzamiento en artedeastro.com
 - [x] Dominio `artedeastro.com` (Cloudflare Registrar), archivo `CNAME` y DNS de GitHub Pages (4 registros A y `www` en CNAME, sin proxy).
-- [ ] Páginas de aviso legal, privacidad y cookies (con los datos fiscales de Eva).
-- [ ] Precios y duraciones reales de lecturas y formatos de evento (ahora pone «a consultar»).
+- [x] Páginas de aviso legal, privacidad y cookies (`aviso-legal.html`, `privacidad.html`, `cookies.html`).
+- [x] Servicios y precios reales: coaching astral 80 €, carta natal resumida + sesión 180 €, carta natal completa 250 €, acompañamiento continuado a medida.
+- [ ] Precios de los formatos de evento (ahora «a consultar»).
 - [ ] Títulos, técnica y medidas de las obras.
-- [ ] Quitar la meta `robots noindex` de `index.html` y abrir `robots.txt`.
+- [x] Abierta a buscadores (`robots.txt` y `sitemap.xml`).
 - [ ] Opcional: alojar las fuentes en local en vez de cargarlas de Google Fonts.

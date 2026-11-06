@@ -1,4 +1,4 @@
-# Web en preparación: oculta a buscadores hasta el lanzamiento en artedeastro.com.
-# Al lanzar, cambiar "Disallow: /" por "Allow: /" y quitar la meta robots noindex de index.html.
 User-agent: *
-Disallow: /
+Allow: /
+
+Sitemap: https://artedeastro.com/sitemap.xml

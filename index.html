@@ -4,9 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>artedeastro · Tarot de Thoth, astrología y arte en Barcelona</title>
-<meta name="description" content="Soy Eva. Lecturas de tarot de Thoth, carta natal y astrocoaching, online y en Barcelona. Tarot en vivo para eventos. El tarot no adivina, orienta.">
-<!-- Quitar esta línea (y robots.txt) cuando la web esté lista para lanzarse en artedeastro.com -->
-<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="Soy Eva. Carta natal, coaching astral y tarot de Thoth, online y en Barcelona. Tarot en vivo para eventos. El tarot no adivina, orienta.">
 <meta name="theme-color" content="#F6F1EA">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="canonical" href="https://artedeastro.com/">
@@ -150,7 +148,10 @@ button,input,select,textarea{font:inherit;color:inherit}
 
 /* ===== Lecturas ===== */
 #lecturas .eyebrow{color:var(--violeta-txt)}
-.services{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.services{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.svc__list{margin:0;padding:0 0 0 18px;display:flex;flex-direction:column;gap:6px;color:var(--tinta-2);font-size:15px;line-height:1.45}
+.svc__list li::marker{color:var(--rosa)}
+.svc--wide{grid-column:1/-1;min-height:0}
 @media (max-width:980px){.services{grid-template-columns:minmax(0,1fr)}}
 .svc{position:relative;overflow:hidden;border-radius:28px;background:var(--papel);border:1px solid var(--linea);padding:36px;display:flex;flex-direction:column;gap:18px;min-height:460px;transition:transform .5s var(--ease),box-shadow .5s;transform-style:preserve-3d}
 .svc::before{content:"";position:absolute;inset:auto -20% -60% -20%;height:120%;background:var(--rosa);border-radius:50%;transform:translateY(40%);transition:transform .7s var(--ease);z-index:0}
@@ -470,7 +471,7 @@ button,input,select,textarea{font:inherit;color:inherit}
       <a href="#joyeria">Joyería <sup class="soon">pronto</sup></a>
       <a href="#eva">Sobre Eva</a>
       <a href="#obra">Obra</a>
-      <button class="btn btn--ink" data-book="tarot" data-cursor>Reservar</button>
+      <button class="btn btn--ink" data-book="coach" data-cursor>Reservar</button>
     </nav>
   </div>
   <span class="progress" id="progress"></span>
@@ -487,7 +488,7 @@ button,input,select,textarea{font:inherit;color:inherit}
       <p class="hero__sub">La astrología no predice, revela ciclos.</p>
       <p class="hero__lead">Soy Eva. Uso el tarot, la astrología, la pintura y la música para ayudarte a entender el momento que vives. Lecturas online y presenciales, eventos para particulares y empresas, y muy pronto, joyería hecha a mano.</p>
       <div class="hero__ctas">
-        <button class="btn btn--rosa" data-book="tarot" data-cursor>Reservar una lectura <svg aria-hidden="true"><use href="#arrow"/></svg></button>
+        <button class="btn btn--rosa" data-book="coach" data-cursor>Reservar una lectura <svg aria-hidden="true"><use href="#arrow"/></svg></button>
         <a class="btn btn--coral" href="#eventos" data-cursor>Contratar para un evento <svg aria-hidden="true"><use href="#arrow"/></svg></a>
       </div>
       <div class="hero__meta">
@@ -550,38 +551,49 @@ button,input,select,textarea{font:inherit;color:inherit}
   <div class="wrap">
     <div class="sec__head reveal">
       <div>
-        <p class="eyebrow">Lecturas</p>
-        <h2>Entender tu momento para decidir con calma</h2>
+        <p class="eyebrow">Lecturas y acompañamiento</p>
+        <h2>Astrología, tarot de Thoth y coaching para entender tu momento</h2>
       </div>
-      <p>Elige la lectura, el día y la hora que te van mejor y envíame la solicitud por WhatsApp. Te confirmo la cita, el precio y la forma de pago.</p>
+      <p>No son lecturas sueltas: es un acompañamiento para conocerte mejor. Elige la modalidad y envíame la solicitud por WhatsApp; te confirmo la fecha y la forma de pago.</p>
     </div>
     <div class="services">
       <article class="svc reveal" data-tilt>
         <svg class="svc__glyph" viewBox="0 0 200 200" aria-hidden="true"><use href="#star" fill="#141014"/></svg>
         <p class="svc__num">i.</p>
-        <h3>Tarot de Thoth</h3>
-        <p>Una pregunta o un tema concreto, con el tarot de Thoth como guía para ver tu situación con claridad y decidir tú.</p>
-        <div class="svc__meta"><p class="svc__price"><small>Precio a consultar</small></p><button class="btn btn--ink" data-book="tarot" data-cursor>Reservar</button></div>
+        <h3>Coaching astral</h3>
+        <p>Sesión de astrología y tarot centrada en los temas que quieras trabajar.</p>
+        <ul class="svc__list"><li>Presencial u online, hasta 1 hora</li><li>Pequeña guía de tu carta natal en PDF</li><li>Tiradas de tarot según tus preguntas</li><li>Puedes grabar la sesión</li></ul>
+        <div class="svc__meta"><p class="svc__price">80 €<small>sesión de hasta 1 h</small></p><button class="btn btn--ink" data-book="coach" data-cursor>Reservar</button></div>
       </article>
       <article class="svc reveal" data-tilt>
         <svg class="svc__glyph" viewBox="0 0 200 200" aria-hidden="true"><use href="#star" fill="#141014"/></svg>
         <p class="svc__num">ii.</p>
-        <h3>Carta natal</h3>
-        <p>Tu mapa del cielo el día que naciste: talentos, retos y los ciclos que estás viviendo. Necesito tu fecha, hora y lugar de nacimiento.</p>
-        <div class="svc__meta"><p class="svc__price"><small>Precio a consultar</small></p><button class="btn btn--ink" data-book="natal" data-cursor>Reservar</button></div>
+        <h3>Carta natal resumida + sesión</h3>
+        <p>La síntesis de lo más importante de tu carta natal, interpretada contigo.</p>
+        <ul class="svc__list"><li>Informe personalizado de 15-20 páginas</li><li>Sesión de hasta 2 horas</li><li>Tirada astrológica de tarot</li><li>Espacio para tus preguntas concretas</li></ul>
+        <div class="svc__meta"><p class="svc__price">180 €<small>informe + sesión de hasta 2 h</small></p><button class="btn btn--ink" data-book="resumida" data-cursor>Reservar</button></div>
       </article>
       <article class="svc reveal" data-tilt>
         <svg class="svc__glyph" viewBox="0 0 200 200" aria-hidden="true"><use href="#star" fill="#141014"/></svg>
         <p class="svc__num">iii.</p>
-        <h3>Astrocoaching</h3>
-        <p>Acompañamiento para un momento de cambio, combinando la lectura del cielo con preguntas que te ayudan a avanzar.</p>
-        <div class="svc__meta"><p class="svc__price"><small>Precio a consultar</small></p><button class="btn btn--ink" data-book="coach" data-cursor>Reservar</button></div>
+        <h3>Carta natal completa</h3>
+        <p>Un estudio exhaustivo de tu carta: planetas, signos, casas, aspectos y configuraciones.</p>
+        <ul class="svc__list"><li>Informe personalizado de 60-80 páginas</li><li>Incluye tu revolución solar</li><li>Elaboración durante aproximadamente un mes</li><li>Videollamada para comentarlo y profundizar</li><li>Incluye lectura de tarot</li></ul>
+        <div class="svc__meta"><p class="svc__price">250 €<small>informe completo + videollamada</small></p><button class="btn btn--ink" data-book="completa" data-cursor>Reservar</button></div>
+      </article>
+      <article class="svc reveal" data-tilt>
+        <svg class="svc__glyph" viewBox="0 0 200 200" aria-hidden="true"><use href="#star" fill="#141014"/></svg>
+        <p class="svc__num">iv.</p>
+        <h3>Acompañamiento continuado</h3>
+        <p>Coaching con astrología y tarot para seguir procesos personales y de pareja o vínculos.</p>
+        <ul class="svc__list"><li>Modalidad semanal o mensual</li><li>Seguimiento de tu proceso sesión a sesión</li><li>Consultas puntuales entre sesiones cuando lo necesites</li></ul>
+        <div class="svc__meta"><p class="svc__price"><small>Tarifa según frecuencia y continuidad</small></p><button class="btn btn--ink" data-book="acomp" data-cursor>Pedir información</button></div>
       </article>
     </div>
     <div class="modes">
       <span><svg width="18" height="18" viewBox="0 0 200 200" aria-hidden="true"><use href="#star" fill="#E36FB2"/></svg>Online por videollamada</span>
       <span><svg width="18" height="18" viewBox="0 0 200 200" aria-hidden="true"><use href="#star" fill="#EE6B4D"/></svg>Presencial en Barcelona</span>
-      <span><svg width="18" height="18" viewBox="0 0 200 200" aria-hidden="true"><use href="#star" fill="#8A5CF0"/></svg>También en tarjeta regalo</span>
+      <span><svg width="18" height="18" viewBox="0 0 200 200" aria-hidden="true"><use href="#star" fill="#8A5CF0"/></svg>Informes personalizados en PDF</span>
     </div>
   </div>
 </section>
@@ -744,7 +756,7 @@ button,input,select,textarea{font:inherit;color:inherit}
           <button class="btn btn--light" id="shuffle" type="button" data-cursor>Barajar de nuevo</button>
         </div>
         <div class="capture" id="capture" hidden>
-          <button class="btn btn--rosa" type="button" data-book="tarot" data-cursor>Reservar una lectura</button>
+          <button class="btn btn--rosa" type="button" data-book="coach" data-cursor>Reservar una lectura</button>
         </div>
         <p class="ok" id="cOk" hidden></p>
         <p class="reading__hint" id="cErr" aria-live="polite"></p>
@@ -795,10 +807,10 @@ button,input,select,textarea{font:inherit;color:inherit}
     <div class="foot__grid">
       <div><h2>El tarot no adivina, orienta.</h2><p style="color:var(--claro);margin-top:14px">La astrología no predice, revela ciclos.</p></div>
       <ul><li><a href="#lecturas">Lecturas</a></li><li><a href="#eventos">Eventos</a></li><li><a href="#joyeria">Joyería (pronto)</a></li><li><a href="#eva">Sobre Eva</a></li><li><a href="#obra">Obra</a></li></ul>
-      <ul id="contacto"><li><a href="https://wa.me/34686156081" target="_blank" rel="noopener">WhatsApp +34 686 15 60 81</a></li><li><a href="https://www.instagram.com/artedeastro/" target="_blank" rel="noopener">Instagram @artedeastro</a></li><li>Online y presencial en Barcelona</li></ul>
+      <ul id="contacto"><li><a href="mailto:artedeastrologia@gmail.com">artedeastrologia@gmail.com</a></li><li><a href="https://wa.me/34686156081" target="_blank" rel="noopener">WhatsApp +34 686 15 60 81</a></li><li><a href="https://www.instagram.com/artedeastro/" target="_blank" rel="noopener">Instagram @artedeastro</a></li><li>Online y presencial en Barcelona</li></ul>
     </div>
     <p class="foot__word" id="footWord" aria-hidden="true">artedeastro</p>
-    <div class="foot__legal"><span>© 2026 artedeastro</span></div>
+    <div class="foot__legal"><span>© 2026 artedeastro</span><span><a href="aviso-legal.html">Aviso legal</a> · <a href="privacidad.html">Privacidad</a> · <a href="cookies.html">Cookies</a></span></div>
   </div>
 </footer>
 
@@ -1150,12 +1162,13 @@ button,input,select,textarea{font:inherit;color:inherit}
   showQ();
 
   /* ---------- Reserva (drawer) ---------- */
-  const SVC = { tarot: 'Tarot de Thoth', natal: 'Carta natal', coach: 'Astrocoaching' };
+  const SVC = { coach: 'Coaching astral · 80 €', resumida: 'Carta natal resumida + sesión · 180 €', completa: 'Carta natal completa · 250 €', acomp: 'Acompañamiento continuado' };
+  const NEEDS_BIRTH = ['coach', 'resumida', 'completa'];
   const MODES = { online: 'Online, videollamada', presencial: 'Presencial en Barcelona' };
   const WD = ['dom', 'lun', 'mar', 'mié', 'jue', 'vie', 'sáb'], MO = ['ene', 'feb', 'mar', 'abr', 'may', 'jun', 'jul', 'ago', 'sep', 'oct', 'nov', 'dic'];
   const days = []; for (let i = 1; days.length < 8; i++) { const d = new Date(now.getFullYear(), now.getMonth(), now.getDate() + i); if (d.getDay() !== 0) days.push(d); }
   const TIMES = ['10:00', '12:00', '17:00', '19:00'];
-  const B = { svc: 'tarot', mode: null, day: null, time: null };
+  const B = { svc: 'coach', mode: null, day: null, time: null };
   const drawer = $('#drawer'), scrim = $('#scrim');
   let lastFocus = null;
   const opt = (k, v, html) => `<button type="button" class="opt${k === 'day' ? ' opt--day' : ''}" data-k="${k}" data-v="${v}" aria-pressed="${B[k] === v}">${html}</button>`;
@@ -1164,7 +1177,7 @@ button,input,select,textarea{font:inherit;color:inherit}
     $('#oMode').innerHTML = Object.entries(MODES).map(([k, v]) => opt('mode', k, v)).join('');
     $('#oDay').innerHTML = days.map((d, i) => opt('day', String(i), `<small>${WD[d.getDay()]}</small>${d.getDate()} ${MO[d.getMonth()]}`)).join('');
     $('#oTime').innerHTML = TIMES.map(t => opt('time', t, t)).join('');
-    $('#natalF').hidden = B.svc !== 'natal'; $('#topicF').hidden = B.svc === 'natal';
+    $('#natalF').hidden = !NEEDS_BIRTH.includes(B.svc); $('#topicF').hidden = false;
     $('#sSvc').textContent = SVC[B.svc]; $('#sMode').textContent = B.mode ? MODES[B.mode] : '—';
     const d = B.day != null ? days[+B.day] : null;
     $('#sWhen').textContent = d ? `${WD[d.getDay()]} ${d.getDate()} ${MO[d.getMonth()]}${B.time ? ' · ' + B.time : ''}` : '—';
@@ -1195,11 +1208,11 @@ button,input,select,textarea{font:inherit;color:inherit}
     const miss = !B.mode ? 'la modalidad' : B.day == null ? 'el día' : !B.time ? 'la hora' : !$('#bName').value.trim() ? 'tu nombre' : null;
     if (miss) { $('#bErr').textContent = `Falta ${miss} para enviar la solicitud.`; return; }
     const v = id => $(id).value.trim();
-    const natal = B.svc === 'natal';
-    wa(['Hola Eva, quiero reservar una lectura.',
+    const natal = NEEDS_BIRTH.includes(B.svc);
+    wa([B.svc === 'acomp' ? 'Hola Eva, quiero información sobre el acompañamiento continuado.' : 'Hola Eva, quiero reservar una sesión.',
       `Lectura: ${SVC[B.svc]}`, `Modalidad: ${MODES[B.mode]}`, `Cuándo: ${$('#sWhen').textContent}`, `Nombre: ${v('#bName')}`,
       natal && v('#bDob') && `Nacimiento: ${v('#bDob')}${v('#bTob') ? ' a las ' + v('#bTob') : ''}${v('#bPob') ? ' en ' + v('#bPob') : ''}`,
-      !natal && v('#bTopic') && `Tema: ${v('#bTopic')}`
+      v('#bTopic') && `Tema: ${v('#bTopic')}`
     ].filter(Boolean).join('\n'));
     $('#dBar').style.transform = 'scaleX(1)';
     $('#doneTxt').textContent = `${SVC[B.svc]} · ${$('#sWhen').textContent} · ${MODES[B.mode]}`;

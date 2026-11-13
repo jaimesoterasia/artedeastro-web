@@ -12,7 +12,10 @@ HTML, CSS y JavaScript sin dependencias ni paso de compilación.
 - `img/`: foto de Eva y cuatro cuadros. `favicon.svg`: el logo.
 
 ## Contacto
-Los enlaces con `data-wa` abren WhatsApp con el mensaje ya escrito para Eva (`site.js`). No hay servidor ni base de datos.
+Los enlaces con `data-wa` abren WhatsApp con el mensaje ya escrito para Eva (`site.js`). No hay servidor propio.
+
+## Testimonios (aprobación con un clic)
+Las clientas envían su testimonio desde `testimonio.html`: `site.js` lo manda por POST a un Google Form de la cuenta de Eva (`artedeastrologia@gmail.com`), que lo guarda en la hoja «Testimonios artedeastro (respuestas)». En esa hoja, la casilla **Aprobado** (última columna) decide qué se publica: la pestaña «Publicados» filtra solo las aprobadas y está publicada como CSV; la web lo lee al cargar (caché de unos minutos). Eva recibe un correo por cada envío nuevo. Para retirar uno, desmarcar la casilla. No hay claves: los identificadores del formulario y la URL del CSV están en `site.js` y no son secretos.
 
 ## Diseño anterior
 La versión previa está en la etiqueta `diseno-anterior-2026-11-06`.

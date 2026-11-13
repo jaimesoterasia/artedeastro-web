@@ -6,7 +6,7 @@ HTML, CSS y JavaScript sin dependencias ni paso de compilación.
 
 ## Estructura
 - `index.html`: inicio (portada, sesiones, Eva, obra, eventos, joyería y contacto).
-- `sesiones.html`: detalle de las cuatro sesiones, precios y preguntas frecuentes.
+- `sesiones.html`: detalle de las cuatro sesiones (sin precios: el botón abre WhatsApp para consultar y reservar) y preguntas frecuentes.
 - `estilos.css` y `site.js`: diseño «C · Arte», salido del Design Lab (repositorio `artedeastro-design-lab`).
 - `aviso-legal.html`, `privacidad.html`, `cookies.html` y `legal.css`: páginas legales.
 - `img/`: foto de Eva y cuatro cuadros. `favicon.svg`: el logo.

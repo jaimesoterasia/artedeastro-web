@@ -5,11 +5,11 @@ Web de **artedeastro** (Eva): tarot de Thoth, astrología y arte en Barcelona. P
 HTML, CSS y JavaScript sin dependencias ni paso de compilación.
 
 ## Estructura
-- `index.html`: inicio (portada, sesiones, Eva, obra, eventos, joyería y contacto).
+- `index.html`: inicio (portada, sesiones, Eva, obra, eventos, testimonios y contacto; la joyería se retiró el 2026-11-20 hasta que haya colección).
 - `sesiones.html`: detalle de las cuatro sesiones (sin precios: el botón abre WhatsApp para consultar y reservar) y preguntas frecuentes.
 - `estilos.css` y `site.js`: diseño «C · Arte», salido del Design Lab (repositorio `artedeastro-design-lab`).
 - `aviso-legal.html`, `privacidad.html`, `cookies.html` y `legal.css`: páginas legales.
-- `img/`: foto de Eva y cuatro cuadros. `favicon.svg`: el logo.
+- `img/`: foto de Eva (`eva-perfil.jpg`) y cuatro cuadros. `favicon.svg`: el logo.
 
 ## Contacto
 Los enlaces con `data-wa` abren WhatsApp con el mensaje ya escrito para Eva (`site.js`). No hay servidor propio.
